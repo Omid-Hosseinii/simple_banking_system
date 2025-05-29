@@ -1,6 +1,6 @@
 from sqlalchemy.orm import sessionmaker
-from BankingManagement.DB.connection_db import get_connection
-from BankingManagement.DB.model import Customer
+from DB.connection_db import get_connection
+from DB.model import Customer
 
 
 engine = get_connection()

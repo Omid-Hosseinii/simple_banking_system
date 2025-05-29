@@ -1,6 +1,6 @@
 from typing import Dict
-from BankingManagement.DB.model import Customer
-from BankingManagement.DB.get_session import get_session
+from DB.model import Customer
+from DB.get_session import get_session
 
 
 class CustomerManager:
