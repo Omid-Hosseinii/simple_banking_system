@@ -1,4 +1,4 @@
-from DB.connection_db import get_connection
+from BankingManagement.DB.connection_db import get_connection
 from sqlalchemy.orm import sessionmaker
 
 

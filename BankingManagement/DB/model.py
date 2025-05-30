@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import declarative_base
-from DB.connection_db import get_connection
+from BankingManagement.DB.connection_db import get_connection
 from sqlalchemy.orm import validates
 
 Base = declarative_base()

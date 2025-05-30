@@ -1,13 +1,11 @@
 from typing import Dict
-from DB.model import Customer
-from DB.get_session import get_session
+from BankingManagement.DB.model import Customer
+from BankingManagement.DB.get_session import get_session
 
 
 class CustomerManager:
     def __init__(self, customer_info: Dict):
         self.customer_info = customer_info
-
-
 
 
 class CustomerCreate(CustomerManager):
@@ -25,3 +23,9 @@ class CustomerCreate(CustomerManager):
         session.commit()
 
         return True
+
+class CustomerQuery:
+    def find_all(self):
+        session = get_session()
+        customers = session.query(Customer).all()
+        return customers
